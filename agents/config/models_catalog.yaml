@@ -1,0 +1,30 @@
+version: v1
+
+common_model_settings:
+  temperature: 0.0
+  timeout:
+    connect: 10.0
+    read: 120.0
+
+default_profile_by_capability:
+  chat: default.chat
+  language: default.language
+
+profiles:
+  - profile_id: default.chat
+    capability: chat
+    description: "Default chat model."
+    model:
+      provider: openai
+      name: gpt-4.1-mini
+      settings: {}
+
+  - profile_id: default.language
+    capability: language
+    description: "Default language model for structured text tasks."
+    model:
+      provider: openai
+      name: gpt-4.1-mini
+      settings: {}
+
+rules: []
