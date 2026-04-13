@@ -471,7 +471,7 @@ wheels = [
 [[package]]
 name = "fred-core"
 version = "1.3.3"
-source = { editable = "../../../fred-core" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiosqlite" },
     { name = "asyncpg" },
@@ -500,87 +500,24 @@ dependencies = [
     { name = "temporalio" },
     { name = "uv" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "aiosqlite", specifier = ">=0.22.1" },
-    { name = "alembic", marker = "extra == 'dev'", specifier = ">=1.18.4" },
-    { name = "alembic", marker = "extra == 'migration'", specifier = ">=1.18.4" },
-    { name = "asyncpg", specifier = ">=0.31.0" },
-    { name = "authzed", specifier = ">=1.22.1" },
-    { name = "azure-identity", specifier = ">=1.25.0" },
-    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.8.6" },
-    { name = "basedpyright", marker = "extra == 'dev'", specifier = "==1.31.0" },
-    { name = "detect-secrets", marker = "extra == 'dev'", specifier = ">=1.5.0" },
-    { name = "fastapi", specifier = "==0.116.1" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langchain-core", specifier = ">=1.2.12" },
-    { name = "langchain-google-genai", specifier = ">=4.2.1" },
-    { name = "langchain-google-vertexai", specifier = ">=3.2.2" },
-    { name = "langchain-mistralai", specifier = ">=1.1.2" },
-    { name = "langchain-ollama", specifier = ">=1.0.1" },
-    { name = "langchain-openai", specifier = ">=1.1.11" },
-    { name = "minio", specifier = ">=7.2.20" },
-    { name = "openfga-sdk", specifier = ">=0.9.9" },
-    { name = "opensearch-py", specifier = "==2.8.0" },
-    { name = "pandas", specifier = ">=2.2.2,<3.0.0" },
-    { name = "prometheus-client", specifier = ">=0.20.5" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3.1.0" },
-    { name = "pydantic", specifier = ">=2.5.2,<3.0.0" },
-    { name = "pyjwt", specifier = ">=2.10.1,<3.0.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
-    { name = "pytest-asyncio", marker = "extra == 'dev'", specifier = ">=1.2.0" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=6.2.1" },
-    { name = "python-dotenv", specifier = ">=1.0.1,<2.0.0" },
-    { name = "python-keycloak", specifier = ">=5.8.1" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12.5" },
-    { name = "sqlalchemy", specifier = ">=2.0.42" },
-    { name = "sqlparse", specifier = ">=0.5.3" },
-    { name = "temporalio", specifier = ">=1.14.1" },
-    { name = "uv", specifier = ">=0.9.15" },
-]
-provides-extras = ["migration", "dev"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "detect-secrets", specifier = ">=1.5.0" },
-    { name = "pytest", specifier = ">=8.4.2" },
-    { name = "pytest-asyncio", specifier = ">=1.2.0" },
-    { name = "pytest-cov", specifier = ">=6.2.1" },
+sdist = { url = "https://files.pythonhosted.org/packages/09/fb/707e0243ecb56bd5d24c51fcf8eda28f333b53f72c2811b5e2e856179dfa/fred_core-1.3.3.tar.gz", hash = "sha256:78ec560dbb7d816deb79b8b68dcce4cd4aeb257085a9391f319197b4b55a701b", size = 104732, upload-time = "2026-04-09T09:33:59.901Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a4/01/ecd2f6c556347eaffca47ffe99de8a775217a08d96e5f80fc9fb3ce67d8d/fred_core-1.3.3-py3-none-any.whl", hash = "sha256:6129b654beaf6d6805bcdfeab6aa7a08b1c56251338d6ea66e76133a58f15923", size = 153637, upload-time = "2026-04-09T09:33:57.71Z" },
 ]
 
 [[package]]
 name = "fred-portable"
 version = "0.1.3"
-source = { editable = "../../../fred-portable" }
-
-[package.metadata]
-requires-dist = [
-    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.8.6" },
-    { name = "basedpyright", marker = "extra == 'dev'", specifier = "==1.31.0" },
-    { name = "detect-secrets", marker = "extra == 'dev'", specifier = ">=1.5.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=6.2.1" },
-    { name = "pytest-socket", marker = "extra == 'dev'", specifier = ">=0.7.0" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12.5" },
-]
-provides-extras = ["dev"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "bandit", specifier = ">=1.8.6" },
-    { name = "basedpyright", specifier = "==1.31.0" },
-    { name = "detect-secrets", specifier = ">=1.5.0" },
-    { name = "pytest", specifier = ">=8.4.2" },
-    { name = "pytest-cov", specifier = ">=6.2.1" },
-    { name = "pytest-socket", specifier = ">=0.7.0" },
-    { name = "ruff", specifier = ">=0.12.5" },
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1f/7d/926c9115e1f4a97f50d0b5b46ca55bc455a071408597c42819bdefa4c494/fred_portable-0.1.3.tar.gz", hash = "sha256:5c28f0814c3b4080d91ac6f1886e1d3b8dec5e2108e126a8004be0054ee85e5c", size = 8921, upload-time = "2026-04-13T08:18:18.813Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/fb/d06438f68e26192bd1f6847cf496b2d76032b06eac6e601c4711907f01a3/fred_portable-0.1.3-py3-none-any.whl", hash = "sha256:9b63c81dc6d6963c52569731654da1494f49807f57d0d37556378e80abe4e402", size = 15283, upload-time = "2026-04-13T08:18:19.605Z" },
 ]
 
 [[package]]
 name = "fred-runtime"
 version = "0.1.12"
-source = { editable = "../../../fred-runtime" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fred-core" },
     { name = "fred-portable" },
@@ -591,40 +528,14 @@ dependencies = [
     { name = "pyyaml" },
     { name = "requests" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/a4/40/1be672512ced5af9cf13cdda612a486178d21411cc51b9dedc39e60a9ca7/fred_runtime-0.1.12.tar.gz", hash = "sha256:3f1ce0246ce9c7057fcd4242e457a3e779c1564dacf9e18c8cb7aaaa7f68881a", size = 108873, upload-time = "2026-04-13T11:40:49.779Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/74/3aac03682425d8dcb1708d34d4640188cd6850877566c508fdc4e3c75ceb/fred_runtime-0.1.12-py3-none-any.whl", hash = "sha256:a5ca12db7f7f8ccb7478f1a0d22da0cab7163e4624a0fde3feeb224e4afa5210", size = 121326, upload-time = "2026-04-13T11:40:48.535Z" },
+]
 
 [package.optional-dependencies]
 app = [
     { name = "fastapi" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.8.6" },
-    { name = "basedpyright", marker = "extra == 'dev'", specifier = "==1.31.0" },
-    { name = "detect-secrets", marker = "extra == 'dev'", specifier = ">=1.5.0" },
-    { name = "fastapi", marker = "extra == 'app'", specifier = ">=0.116" },
-    { name = "fred-core", editable = "../../../fred-core" },
-    { name = "fred-portable", editable = "../../../fred-portable" },
-    { name = "fred-sdk", editable = "../../../fred-sdk" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langchain-mcp-adapters", specifier = ">=0.2.1" },
-    { name = "langfuse", specifier = ">=3.0.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=6.2.1" },
-    { name = "pyyaml", specifier = ">=6.0" },
-    { name = "requests", specifier = ">=2.32,<3" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12.5" },
-]
-provides-extras = ["app", "dev"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "bandit", specifier = ">=1.8.6" },
-    { name = "basedpyright", specifier = "==1.31.0" },
-    { name = "detect-secrets", specifier = ">=1.5.0" },
-    { name = "pytest", specifier = ">=8.4.2" },
-    { name = "pytest-cov", specifier = ">=6.2.1" },
-    { name = "ruff", specifier = ">=0.12.5" },
 ]
 
 [[package]]
@@ -651,8 +562,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "fred-runtime", extras = ["app"], editable = "../../../fred-runtime" },
-    { name = "fred-sdk", editable = "../../../fred-sdk" },
+    { name = "fred-runtime", extras = ["app"], specifier = ">=0.1.12" },
+    { name = "fred-sdk", specifier = ">=0.1.4" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12.5" },
     { name = "uvicorn", specifier = ">=0.35" },
@@ -668,7 +579,7 @@ dev = [
 [[package]]
 name = "fred-sdk"
 version = "0.1.4"
-source = { editable = "../../../fred-sdk" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "deepagents" },
     { name = "fred-core" },
@@ -679,34 +590,9 @@ dependencies = [
     { name = "langgraph" },
     { name = "pydantic" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "bandit", marker = "extra == 'dev'", specifier = ">=1.8.6" },
-    { name = "basedpyright", marker = "extra == 'dev'", specifier = "==1.31.0" },
-    { name = "deepagents", specifier = ">=0.4.11" },
-    { name = "detect-secrets", marker = "extra == 'dev'", specifier = ">=1.5.0" },
-    { name = "fred-core", editable = "../../../fred-core" },
-    { name = "fred-portable", editable = "../../../fred-portable" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langchain", specifier = ">=0.3.0" },
-    { name = "langchain-core", specifier = ">=0.3.0" },
-    { name = "langgraph", specifier = ">=1.1.3" },
-    { name = "pydantic", specifier = ">=2.7.0,<3.0.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=6.2.1" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.12.5" },
-]
-provides-extras = ["dev"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "bandit", specifier = ">=1.8.6" },
-    { name = "basedpyright", specifier = "==1.31.0" },
-    { name = "detect-secrets", specifier = ">=1.5.0" },
-    { name = "pytest", specifier = ">=8.4.2" },
-    { name = "pytest-cov", specifier = ">=6.2.1" },
-    { name = "ruff", specifier = ">=0.12.5" },
+sdist = { url = "https://files.pythonhosted.org/packages/81/7c/a03aa4e775863ce0d669a32618cf198629545ff66113cf67b05eddad3c95/fred_sdk-0.1.4.tar.gz", hash = "sha256:367e67e9abeaba9622848e03b978df73cbd025777ecb2589652568d134f138e3", size = 121710, upload-time = "2026-04-13T08:17:33.894Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9a/18/597d0d1f363916e66847e3f5545693bc757e8e93ed78d90c534897cb4f0f/fred_sdk-0.1.4-py3-none-any.whl", hash = "sha256:57e856d8909a60a4921c4beb0affe3232bf57bf3e8e48729afc6d884a0b257d2", size = 154212, upload-time = "2026-04-13T08:17:35.473Z" },
 ]
 
 [[package]]

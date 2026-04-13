@@ -24,12 +24,6 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 include = ["fred_samples_agents*"]
 
-[tool.uv.sources]
-fred-core     = { path = "../../../fred-core",     editable = true }
-fred-portable = { path = "../../../fred-portable", editable = true }
-fred-sdk      = { path = "../../../fred-sdk",      editable = true }
-fred-runtime  = { path = "../../../fred-runtime",  editable = true }
-
 [dependency-groups]
 dev = [
   "pytest>=8.4.2",
