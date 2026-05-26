@@ -44,3 +44,30 @@ servers:
     url: "http://localhost:9798/mcp"
     sse_read_timeout: 5000
     auth_mode: "no_token"
+
+  - id: "mcp-knowledge-flow-mcp-text"
+    name: "Knowledge Flow Text Search"
+    description: "Document search over Knowledge Flow libraries"
+    enabled: true
+    transport: "streamable_http"
+    url: "http://localhost:8111/knowledge-flow/v1/mcp-text"
+    sse_read_timeout: 2000
+    auth_mode: "user_token"
+    config_fields:
+      - key: "chat_options.libraries_selection"
+        type: "boolean"
+        title: "Document library picker"
+        description: "Show a document library selector in the chat interface."
+        default: true
+      - key: "chat_options.search_policy"
+        type: "string"
+        title: "Default search policy"
+        description: "Default retrieval strategy used by Knowledge Flow search."
+        enum: ["strict", "hybrid", "semantic"]
+        default: "hybrid"
+      - key: "chat_options.search_rag_scope"
+        type: "string"
+        title: "Default RAG scope"
+        description: "Default answer scope used by Knowledge Flow search."
+        enum: ["corpus_only", "hybrid", "general_only"]
+        default: "corpus_only"

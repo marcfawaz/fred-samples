@@ -13,6 +13,8 @@
 # limitations under the License.
 from fred_sdk.contracts.models import GraphAgentDefinition, ReActAgentDefinition
 
+from fred_samples_agents.document_rag_agent import DOCUMENT_RAG_AGENT
+from fred_samples_agents.parameterized_react_agent import PARAMETERIZED_REACT_AGENT
 from fred_samples_agents.bank_transfer.graph_agent import BANK_TRANSFER_AGENT
 from fred_samples_agents.postal_tracking.graph_agent import POSTAL_TRACKING_AGENT
 from fred_samples_agents.general_assistant import GENERAL_ASSISTANT_AGENT
@@ -25,6 +27,8 @@ from fred_samples_agents.team_of_3_agents_sample import (
 
 def build_registry() -> dict[str, ReActAgentDefinition | GraphAgentDefinition]:
     return {
+        DOCUMENT_RAG_AGENT.agent_id: DOCUMENT_RAG_AGENT,
+        PARAMETERIZED_REACT_AGENT.agent_id: PARAMETERIZED_REACT_AGENT,
         GENERAL_ASSISTANT_AGENT.agent_id: GENERAL_ASSISTANT_AGENT,
         BANK_TRANSFER_AGENT.agent_id: BANK_TRANSFER_AGENT,
         POSTAL_TRACKING_AGENT.agent_id: POSTAL_TRACKING_AGENT,
